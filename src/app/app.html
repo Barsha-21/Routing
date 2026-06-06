@@ -1,0 +1,23 @@
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" routerLink="/">
+      <span class="brand-mark">OL</span>
+      <span>Online Learning Portal</span>
+    </a>
+
+    <div class="nav-links">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/courses" routerLinkActive="active">Courses</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <router-outlet />
+</main>
+
+<footer class="site-footer">
+  <p>Online Learning Portal - Angular Routing Assignment</p>
+</footer>
